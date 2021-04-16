@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/reporting.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber-JVM Reports  - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber-JVM Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="feature-overview.html">Features</a></li>
+        <li role="presentation" ><a href="tag-overview.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="step-overview.html">Steps</a></li>
+        <li role="presentation" ><a href="failures-overview.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid" id="build-info">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-1">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Project</th>
+                          <th>Number</th>
+                        <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="info">
+            <td>CucumberWebGui</td>
+                          <td>1</td>
+                        <td>15 Apr 2021, 19:29</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div id="report-lead" class="container-fluid>
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <h2>Steps Statistics</h2>
+              <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+          </div>
+  </div>
+</div>
+
+<div class="container-fluid" id="summary">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+              <table id="tablesorter" class="stats-table table-hover">
+
+          <thead>
+            <tr class="header">
+              <th>Implementation</th>
+              <th>Occurrences</th>
+              <th>Duration</th>
+              <th>Average</th>
+              <th>Ratio</th>
+            </tr>
+          </thead>
+
+          <tbody>
+                          <tr>
+                <td class="location">IkeaStepDefinition.click_on_lightening()</td>
+                <td>1</td>
+                <td class="duration" data-value="920534600">920ms</td>
+                <td class="duration" data-value="920534600">920ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">IkeaStepDefinition.then_select_price_range()</td>
+                <td>1</td>
+                <td class="duration" data-value="1502446100">1s 502ms</td>
+                <td class="duration" data-value="1502446100">1s 502ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">IkeaStepDefinition.user_click_on_Add_to_bag()</td>
+                <td>2</td>
+                <td class="duration" data-value="25571428500">25s 571ms</td>
+                <td class="duration" data-value="12785714250">12s 785ms</td>
+                <td class="failed">50.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">IkeaStepDefinition.user_click_on_Continue_to_bag()</td>
+                <td>1</td>
+                <td class="duration" data-value="15106060200">15s 106ms</td>
+                <td class="duration" data-value="15106060200">15s 106ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">IkeaStepDefinition.user_click_on_Continue_to_bag_for_Room()</td>
+                <td>1</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">IkeaStepDefinition.user_click_on_Led_Light_Bulbs()</td>
+                <td>1</td>
+                <td class="duration" data-value="1699468199">1s 699ms</td>
+                <td class="duration" data-value="1699468199">1s 699ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">IkeaStepDefinition.user_click_on_Room()</td>
+                <td>1</td>
+                <td class="duration" data-value="1381099400">1s 381ms</td>
+                <td class="duration" data-value="1381099400">1s 381ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">IkeaStepDefinition.user_click_on_images()</td>
+                <td>1</td>
+                <td class="duration" data-value="47280343299">47s 280ms</td>
+                <td class="duration" data-value="47280343299">47s 280ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">IkeaStepDefinition.user_click_on_product()</td>
+                <td>1</td>
+                <td class="duration" data-value="2648868201">2s 648ms</td>
+                <td class="duration" data-value="2648868201">2s 648ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">IkeaStepDefinition.user_click_to_Checkout()</td>
+                <td>1</td>
+                <td class="duration" data-value="14080546500">14s 080ms</td>
+                <td class="duration" data-value="14080546500">14s 080ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">IkeaStepDefinition.user_click_to_Checkout_for_Room()</td>
+                <td>1</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">IkeaStepDefinition.user_clicks_continue()</td>
+                <td>1</td>
+                <td class="duration" data-value="259190099">259ms</td>
+                <td class="duration" data-value="259190099">259ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">IkeaStepDefinition.user_clicks_on_Sign_in()</td>
+                <td>1</td>
+                <td class="duration" data-value="7240981299">7s 240ms</td>
+                <td class="duration" data-value="7240981299">7s 240ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">IkeaStepDefinition.user_closes_brower_for_Login()</td>
+                <td>1</td>
+                <td class="duration" data-value="705533800">705ms</td>
+                <td class="duration" data-value="705533800">705ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">IkeaStepDefinition.user_closes_brower_for_Product()</td>
+                <td>1</td>
+                <td class="duration" data-value="716632400">716ms</td>
+                <td class="duration" data-value="716632400">716ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">IkeaStepDefinition.user_closes_brower_for_Room()</td>
+                <td>1</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">IkeaStepDefinition.user_enters_password()</td>
+                <td>1</td>
+                <td class="duration" data-value="485644100">485ms</td>
+                <td class="duration" data-value="485644100">485ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">IkeaStepDefinition.user_enters_username()</td>
+                <td>1</td>
+                <td class="duration" data-value="15562815501">15s 562ms</td>
+                <td class="duration" data-value="15562815501">15s 562ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">IkeaStepDefinition.user_is_already_on_Login_home_Page()</td>
+                <td>1</td>
+                <td class="duration" data-value="30923389500">30s 923ms</td>
+                <td class="duration" data-value="30923389500">30s 923ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">IkeaStepDefinition.user_is_already_on_Product_home_Page()</td>
+                <td>1</td>
+                <td class="duration" data-value="23341120700">23s 341ms</td>
+                <td class="duration" data-value="23341120700">23s 341ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">IkeaStepDefinition.user_is_already_on_Room_home_Page()</td>
+                <td>1</td>
+                <td class="duration" data-value="27875422900">27s 875ms</td>
+                <td class="duration" data-value="27875422900">27s 875ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">IkeaStepDefinition.user_select_color()</td>
+                <td>1</td>
+                <td class="duration" data-value="3878574400">3s 878ms</td>
+                <td class="duration" data-value="3878574400">3s 878ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                      </tbody>
+
+          <tfoot class="total">
+            <tr>
+              <td>22</td>
+              <td>23</td>
+              <td class="duration">3m 41s 180ms</td>
+              <td class="duration">9s 616ms</td>
+              <td>Totals</td>
+            </tr>
+          </tfoot>
+
+        </table>
+          </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="221.180099">
+<testcase classname="IKEA Home Furniture, Décor &amp; Outdoors Feature" name="Ikea Login Test Scenario" time="55.177554">
+<system-out><![CDATA[Given user is already on Login home Page....................................passed
+Then user clicks on Sign in.................................................passed
+Then user enters username...................................................passed
+Then user enters password...................................................passed
+Then user clicks continue...................................................passed
+Then user closes brower for Login...........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="IKEA Home Furniture, Décor &amp; Outdoors Feature" name="Product Test Scenario" time="84.084659">
+<system-out><![CDATA[Given user is already on Product home Page..................................passed
+Then user click on product..................................................passed
+And click on lightening.....................................................passed
+Then user click on Led Light Bulbs..........................................passed
+Then user click on Add to bag...............................................passed
+Then user click on Continue to bag..........................................passed
+Then user click to Checkout.................................................passed
+Then user closes brower for Product.........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="IKEA Home Furniture, Décor &amp; Outdoors Feature" name="Room Test Scenario" time="81.917886">
+<failure message="org.openqa.selenium.NoSuchSessionException: invalid session id&#10;Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'&#10;System info: host: 'DESKTOP-HTL5CDV', ip: '192.168.86.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_111'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.128, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\deepa\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62590}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 9869024a1657bf7e0ba460f1aee6895f&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;&#10;&#9;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;&#10;&#9;at java.lang.reflect.Constructor.newInstance(Constructor.java:423)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:482)&#13;&#10;&#9;at test.com.IkeaStepDefinition.then_select_price_range(IkeaStepDefinition.java:165)&#13;&#10;&#9;at ✽.And Then select price range(ikea.feature:30)&#13;&#10;"><![CDATA[Given user is already on Room home Page.....................................passed
+Then user click on Room.....................................................passed
+Then user click on images...................................................passed
+Then user select color......................................................passed
+And Then select price range.................................................failed
+Then user click on Add to bag...............................................skipped
+Then user click on Continue to bag for Room.................................skipped
+Then user click to Checkout for Room........................................skipped
+Then user closes brower for Room............................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'DESKTOP-HTL5CDV', ip: '192.168.86.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.128, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\deepa\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62590}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9869024a1657bf7e0ba460f1aee6895f
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:482)
+	at test.com.IkeaStepDefinition.then_select_price_range(IkeaStepDefinition.java:165)
+	at ✽.And Then select price range(ikea.feature:30)
+]]></failure>
+</testcase>
+</testsuite>
